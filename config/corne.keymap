@@ -52,7 +52,6 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
         };
 
         ht_test1: ht_test1 {
@@ -63,7 +62,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
         };
 
         ht_test2: ht_test2 {
@@ -74,7 +72,6 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
         };
 
         ht_test3: ht_test3 {
@@ -85,7 +82,6 @@
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
         };
     };
 
