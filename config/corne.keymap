@@ -43,6 +43,16 @@
 
             label = "HT_DEF";
         };
+
+        ht_test: ht_test {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TEST";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {
@@ -50,10 +60,10 @@
 
         command_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &trans
-                        &to 1   &to 1   &to 1     &to 1           &to 1           &to 1
+&trans  &trans  &trans  &trans  &trans        &trans    &trans          &trans          &trans        &trans           &trans  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &ht_test F A  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &trans          &trans          &trans        &trans           &trans  &trans
+                        &to 1   &to 1         &to 1     &to 1           &to 1           &to 1
             >;
         };
 
