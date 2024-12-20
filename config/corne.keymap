@@ -44,9 +44,42 @@
             label = "HT_DEF";
         };
 
-        ht_test: ht_test {
+        ht_test0: ht_test0 {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_TEST";
+            label = "HT_TEST0";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+        };
+
+        ht_test1: ht_test1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TEST1";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+        };
+
+        ht_test2: ht_test2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TEST2";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+            quick-tap-ms = <200>;
+        };
+
+        ht_test3: ht_test3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_TEST3";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -61,10 +94,10 @@
 
         command_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans    &trans          &trans          &trans        &trans           &trans  &kp BACKSPACE
-&trans  &trans  &trans  &trans  &ht_test F A  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans        &trans    &trans          &trans          &trans        &trans           &trans  &trans
-                        &to 1   &to 1         &to 1     &to 1           &to 1           &to 1
+&trans  &ht_test0 Q Z  &ht_test1 W X  &ht_test2 E C  &ht_test3 R V  &trans    &trans          &trans          &trans        &trans           &trans  &kp BACKSPACE
+&trans  &trans         &trans         &trans         &none          &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans         &trans         &trans         &trans         &trans    &trans          &trans          &trans        &trans           &trans  &trans
+                                      &to 1          &to 1          &to 1     &to 1           &to 1           &to 1
             >;
         };
 
