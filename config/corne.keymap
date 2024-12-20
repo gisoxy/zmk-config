@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&lt { tapping-term-ms = <500>; };
-
 / {
     behaviors {
         lh_pht: left_positional_hold_tap {
@@ -38,52 +36,12 @@
         ht_def: ht_def {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "hold-preferred";
             tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <500>;
             bindings = <&to>, <&kp>;
 
             label = "HT_DEF";
-        };
-
-        ht_test0: ht_test0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_TEST0";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <1000>;
-        };
-
-        ht_test1: ht_test1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_TEST1";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <1000>;
-        };
-
-        ht_test2: ht_test2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_TEST2";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <1000>;
-        };
-
-        ht_test3: ht_test3 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_TEST3";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <1000>;
         };
     };
 
@@ -92,10 +50,10 @@
 
         command_layer {
             bindings = <
-&trans  &ht_test0 Q Z  &ht_test1 W X  &ht_test2 E C  &ht_test3 R V  &trans    &trans          &trans          &trans        &trans           &trans  &kp BACKSPACE
-&trans  &trans         &trans         &trans         &none          &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans         &trans         &trans         &trans         &trans    &trans          &trans          &trans        &trans           &trans  &trans
-                                      &to 1          &to 1          &to 1     &to 1           &to 1           &to 1
+&trans  &none   &none   &none   &none   &trans    &trans          &trans          &trans        &trans           &trans  &kp BACKSPACE
+&trans  &trans  &trans  &trans  &none   &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &trans
+                        &to 1   &to 1   &to 1     &to 1           &to 1           &to 1
             >;
         };
 
@@ -107,10 +65,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&lt 0 ESCAPE  &kp Q            &kp W           &kp E           &kp R            &kp T        &kp Y    &kp U            &kp I           &kp O               &kp P               &kp BSPC
-&kp TAB       &lh_pht LSHFT A  &lh_pht LGUI S  &lh_pht LALT D  &lh_pht LCTRL F  &kp G        &kp H    &rh_pht LCTRL J  &rh_pht RALT K  &rh_pht LEFT_GUI K  &rh_pht RSHFT SEMI  &kp SQT
-&kp LCTRL     &kp Z            &kp X           &kp C           &kp V            &kp B        &kp N    &kp M            &kp COMMA       &kp DOT             &kp FSLH            &kp CAPSLOCK
-                                               &kp LGUI        &mo 2            &kp SPACE    &kp RET  &mo 3            &kp RALT
+&ht_def 0 ESCAPE  &kp Q            &kp W           &kp E           &kp R            &kp T        &kp Y    &kp U            &kp I           &kp O               &kp P               &kp BSPC
+&kp TAB           &lh_pht LSHFT A  &lh_pht LGUI S  &lh_pht LALT D  &lh_pht LCTRL F  &kp G        &kp H    &rh_pht LCTRL J  &rh_pht RALT K  &rh_pht LEFT_GUI K  &rh_pht RSHFT SEMI  &kp SQT
+&kp LCTRL         &kp Z            &kp X           &kp C           &kp V            &kp B        &kp N    &kp M            &kp COMMA       &kp DOT             &kp FSLH            &kp CAPSLOCK
+                                                   &kp LGUI        &mo 2            &kp SPACE    &kp RET  &mo 3            &kp RALT
             >;
         };
 
