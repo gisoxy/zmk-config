@@ -18,6 +18,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <19 20 21 22 18 30 31 32 33 34 35 23 11 10 9 8 7 6 39 40 41>;    // <---[[right-hand keys]]
+            require-prior-idle-ms = <125>;
         };
 
         rh_pht: rh_pht {
@@ -29,6 +30,7 @@
 
             label = "RH_PHT";
             hold-trigger-key-positions = <13 14 15 16 38 37 36 29 17 5 4 28 27 3 2 26 25 24 12 1 0>;
+            require-prior-idle-ms = <125>;
         };
 
         ht_def: ht_def {
