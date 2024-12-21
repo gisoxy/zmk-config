@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &none   &none     &none     &none   &none        &kp CARET      &kp ASTRK      &kp LPAR        &kp RPAR         &kp MINUS  &kp EQUAL
-&kp TILDE  &none   &kp HASH  &kp DLLR  &kp AT  &trans       &kp AMPERSAND  &kp PIPE       &kp LBKT        &kp RBKT         &kp PLUS   &kp GRAVE
-&trans     &trans  &trans    &trans    &trans  &trans       &kp EXCL       &kp PERCENT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BSLH   &kp SLASH
-                             &none     &trans  &kp SPACE    &kp RET        &kp BACKSPACE  &kp DELETE
+&none      &none  &none     &none     &none   &none        &kp CARET      &kp ASTRK      &kp LPAR        &kp RPAR         &kp MINUS  &kp EQUAL
+&kp TILDE  &none  &kp HASH  &kp DLLR  &kp AT  &none        &kp AMPERSAND  &kp PIPE       &kp LBKT        &kp RBKT         &kp PLUS   &kp GRAVE
+&none      &none  &none     &none     &none   &none        &kp EXCL       &kp PERCENT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BSLH   &kp SLASH
+                            &none     &none   &kp SPACE    &kp RET        &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -83,37 +83,37 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &trans  &kp N7  &kp N8  &kp N9         &kp PLUS     &kp MINUS  &none   &none  &none  &none  &kp BSPC
-&kp TILDE   &trans  &kp N4  &kp N5  &kp N6         &kp ASTRK    &kp FSLH   &none   &none  &none  &none  &trans
-&trans      &trans  &kp N1  &kp N2  &kp N3         &kp DOT      &kp EQUAL  &none   &none  &none  &none  &trans
-                            &kp N0  &kp BACKSPACE  &kp SPACE    &kp RET    &trans  &none
+&kp ESCAPE  &none  &kp N7  &kp N8  &kp N9         &kp PLUS     &kp MINUS  &none  &none  &none  &none  &kp BSPC
+&kp TILDE   &none  &kp N4  &kp N5  &kp N6         &kp ASTRK    &kp FSLH   &none  &none  &none  &none  &none
+&none       &none  &kp N1  &kp N2  &kp N3         &kp DOT      &kp EQUAL  &none  &none  &none  &none  &none
+                           &kp N0  &kp BACKSPACE  &kp SPACE    &kp RET    &none  &none
             >;
         };
 
         function_layter {
             bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans     &trans  &trans  &trans
+&none  &none  &kp F7  &kp F8  &kp F9  &kp F10    &none   &none   &none   &none   &none  &none
+&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &none  &none
+&none  &none  &kp F1  &kp F2  &kp F3  &kp F12    &none   &none   &none   &none   &none  &none
+                      &none   &none   &none      &none   &none   &none
             >;
         };
 
         command_layer {
             bindings = <
-&to 0        &kp LC(Q)            &kp LC(W)           &kp LC(E)           &kp LC(R)            &kp LC(T)    &kp LC(Y)       &kp LC(U)                 &kp LC(I)              &kp LC(O)                     &kp LC(P)               &kp LC(LA(DELETE))
-&kp LA(TAB)  &lh_pht LSHFT LC(A)  &lh_pht LGUI LC(S)  &lh_pht LALT LC(D)  &lh_pht LCTRL LC(F)  &kp LC(G)    &kp LEFT_ARROW  &rh_pht LCTRL DOWN_ARROW  &rh_pht RALT UP_ARROW  &rh_pht LEFT_GUI RIGHT_ARROW  &rh_pht RSHFT LC(SEMI)  &kp LC(SQT)
-&kp LC(TAB)  &kp LC(Z)            &kp LC(X)           &kp LC(C)           &kp LC(V)            &kp LC(B)    &kp LC(N)       &kp LC(M)                 &kp LC(COMMA)          &kp LC(DOT)                   &kp LC(FSLH)            &kp PRINTSCREEN
-                                                      &none               &none                &kp SPACE    &kp RET         &kp BACKSPACE             &kp DELETE
+&to 0  &kp LC(Q)            &kp LC(W)           &kp LC(E)           &kp LC(R)            &kp LC(T)    &kp LC(Y)       &kp LC(U)                 &kp LC(I)              &kp LC(O)                     &kp LC(P)               &kp LC(LA(DELETE))
+&none  &lh_pht LSHFT LC(A)  &lh_pht LGUI LC(S)  &lh_pht LALT LC(D)  &lh_pht LCTRL LC(F)  &kp LC(G)    &kp LEFT_ARROW  &rh_pht LCTRL DOWN_ARROW  &rh_pht RALT UP_ARROW  &rh_pht LEFT_GUI RIGHT_ARROW  &rh_pht RSHFT LC(SEMI)  &kp LC(SQT)
+&none  &kp LC(Z)            &kp LC(X)           &kp LC(C)           &kp LC(V)            &kp LC(B)    &kp LC(N)       &kp LC(M)                 &kp LC(COMMA)          &kp LC(DOT)                   &kp LC(FSLH)            &kp PRINTSCREEN
+                                                &none               &none                &kp SPACE    &kp RET         &kp BACKSPACE             &kp DELETE
             >;
         };
 
         setting_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &trans  &trans
-                        &trans  &trans  &trans    &trans        &trans        &trans
+&none  &none  &none  &none  &none  &none    &none         &none         &none         &bt BT_CLR_ALL  &none  &none
+&none  &none  &none  &none  &none  &none    &none         &none         &none         &none           &none  &none
+&none  &none  &none  &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none           &none  &none
+                     &none  &none  &none    &none         &none         &none
             >;
         };
     };
