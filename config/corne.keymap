@@ -122,7 +122,7 @@
         compatible = "zmk,conditional-layers";
 
         go_settings {
-            if-layers = <1 2>;
+            if-layers = <3 4>;
             then-layer = <5>;
         };
     };
