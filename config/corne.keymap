@@ -51,7 +51,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        input_layer {
+        main_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -59,14 +59,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE          &kp Q            &kp W           &kp E           &kp R            &kp T        &kp Y    &kp U            &kp I           &kp O               &kp P               &kp BSPC
-&kp TAB             &lh_pht LSHFT A  &lh_pht LGUI S  &lh_pht LALT D  &lh_pht LCTRL F  &kp G        &kp H    &rh_pht LCTRL J  &rh_pht RALT K  &rh_pht LEFT_GUI L  &rh_pht RSHFT SEMI  &kp SQT
-&kp LA(LEFT_SHIFT)  &kp Z            &kp X           &kp C           &kp V            &kp B        &kp N    &kp M            &kp COMMA       &kp DOT             &kp FSLH            &kp LEFT_BRACKET
-                                                     &mo 4           &mo 1            &kp SPACE    &kp RET  &mo 2            &mo 3
+&kp TAB    &kp Q            &kp W           &kp E           &kp R            &kp T        &kp Y     &kp U            &kp I           &kp O               &kp P               &kp DEL
+&kp LSHFT  &lh_pht LSHFT A  &lh_pht LGUI S  &lh_pht LALT D  &lh_pht LCTRL F  &kp G        &kp H     &rh_pht LCTRL J  &rh_pht RALT K  &rh_pht LEFT_GUI L  &rh_pht RSHFT SEMI  &kp ENTER
+&kp LCTRL  &kp Z            &kp X           &kp C           &kp V            &kp B        &kp N     &kp M            &kp COMMA       &kp DOT             &kp FSLH            &kp ESC
+                                            &kp LALT        &mo 1            &kp SPACE    &kp BSPC  &mo 2            &kp LGUI
             >;
         };
 
-        symbol_layer {
+        lower_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -74,14 +74,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none      &none  &none     &none     &none   &none        &kp CARET      &kp ASTRK      &kp LPAR        &kp RPAR         &kp MINUS  &kp EQUAL
-&kp TILDE  &none  &kp HASH  &kp DLLR  &kp AT  &none        &kp AMPERSAND  &kp PIPE       &kp LBKT        &kp RBKT         &kp PLUS   &kp GRAVE
-&none      &none  &none     &none     &none   &none        &kp EXCL       &kp PERCENT    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BSLH   &kp SLASH
-                            &none     &none   &kp SPACE    &kp RET        &kp BACKSPACE  &kp DELETE
+&kp TILDE  &kp EXCL  &kp N7  &kp N8  &kp N9  &kp ASTRK    &kp MINUS       &kp DOLLAR      &kp LPAR      &kp RPAR        &kp LBKT  &kp RBKT
+&trans     &kp AT    &kp N4  &kp N5  &kp N6  &kp PLUS     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp APOS  &trans
+&trans     &kp HASH  &kp N1  &kp N2  &kp N3  &kp DOT      &kp EQUAL       &kp PERCENT     &kp AMPS      &kp CARET       &kp BSLH  &kp GRAVE
+                             &kp N0  &trans  &trans       &trans          &trans          &trans
             >;
         };
 
-        number_layer {
+        upper_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -89,37 +89,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &none  &kp N7  &kp N8  &kp N9         &kp PLUS     &kp MINUS  &none  &none  &none  &none  &kp BSPC
-&kp TILDE   &none  &kp N4  &kp N5  &kp N6         &kp ASTRK    &kp FSLH   &none  &none  &none  &none  &none
-&none       &none  &kp N1  &kp N2  &kp N3         &kp DOT      &kp EQUAL  &none  &none  &none  &none  &none
-                           &kp N0  &kp BACKSPACE  &kp SPACE    &kp RET    &none  &none
-            >;
-        };
-
-        function_layter {
-            bindings = <
-&none  &none  &kp F7  &kp F8  &kp F9  &kp F10    &none   &none   &none   &none   &none  &none
-&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &none  &none
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F12    &none   &none   &none   &none   &none  &none
-                      &trans  &none   &none      &none   &none   &none
-            >;
-        };
-
-        command_layer {
-            bindings = <
-&to 0  &kp LC(Q)            &kp LC(W)           &kp LC(E)           &kp LC(R)            &kp LC(T)    &kp LC(Y)       &kp LC(U)                 &kp LC(I)              &kp LC(O)                     &kp LC(P)               &kp LC(LA(DELETE))
-&none  &lh_pht LSHFT LC(A)  &lh_pht LGUI LC(S)  &lh_pht LALT LC(D)  &lh_pht LCTRL LC(F)  &kp LC(G)    &kp LEFT_ARROW  &rh_pht LCTRL DOWN_ARROW  &rh_pht RALT UP_ARROW  &rh_pht LEFT_GUI RIGHT_ARROW  &rh_pht RSHFT LC(SEMI)  &kp LC(SQT)
-&none  &kp LC(Z)            &kp LC(X)           &kp LC(C)           &kp LC(V)            &kp LC(B)    &kp LC(N)       &kp LC(M)                 &kp LC(COMMA)          &kp LC(DOT)                   &kp LC(FSLH)            &kp PRINTSCREEN
-                                                &none               &none                &kp SPACE    &kp RET         &kp BACKSPACE             &kp DELETE
+&trans  &none  &kp F7  &kp F8  &kp F9  &kp F10    &kp MINUS  &none    &none    &none    &none  &trans
+&trans  &none  &kp F4  &kp F5  &kp F6  &kp F10    &kp F10    &kp F10  &kp F12  &kp F11  &none  &none
+&trans  &none  &kp F1  &kp F2  &kp F3  &kp F12    &trans     &none    &none    &none    &none  &none
+                       &trans  &trans  &trans     &trans     &none    &none
             >;
         };
 
         setting_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none         &none         &none         &bt BT_CLR_ALL  &none  &none
-&none  &none  &none  &none  &none  &none    &none         &none         &none         &none           &none  &none
-&none  &none  &none  &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none           &none  &none
-                     &none  &none  &none    &none         &none         &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &trans  &studio_unlock
+                        &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
     };
@@ -128,8 +110,8 @@
         compatible = "zmk,conditional-layers";
 
         go_settings {
-            if-layers = <3 4>;
-            then-layer = <5>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
