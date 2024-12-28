@@ -57,6 +57,16 @@
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
         };
+
+        ht_layer: ht_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_LAYER";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -70,10 +80,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y       &kp U   &ht UNDER I  &ht EQUAL O  &ht LEFT_BRACKET P  &kp BACKSPACE
-&kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H       &kp J   &kp K        &kp L        &kp SEMI            &ht DOUBLE_QUOTES SINGLE_QUOTE
-&kp LALT   &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N       &kp M   &kp COMMA    &kp DOT      &kp FSLH            &kp ESC
-                         &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp RETURN  &tog 2  &kp LGUI
+&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y       &kp U          &ht UNDER I  &ht EQUAL O  &ht LEFT_BRACKET P  &kp BACKSPACE
+&kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H       &kp J          &kp K        &kp L        &kp SEMI            &ht DOUBLE_QUOTES SINGLE_QUOTE
+&kp LALT   &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N       &kp M          &kp COMMA    &kp DOT      &kp FSLH            &kp ESC
+                         &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp RETURN  &ht_layer 2 2  &kp LGUI
             >;
         };
 
