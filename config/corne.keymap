@@ -85,7 +85,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&ht LC(TILDE) TILDE  &kp EXCL  &kp AT  &kp HASH        &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPS           &ht MINUS UNDER  &ht PLUS EQUAL  &kp ASTRK  &kp DELETE
+&ht LC(TILDE) TILDE  &kp EXCL  &kp AT  &kp HASH        &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPS           &ht UNDER MINUS  &ht PLUS EQUAL  &kp ASTRK  &kp DELETE
 &kp LG(SPACE)        &kp N1    &kp N2  &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9          &kp N0     &kp RETURN
 &trans               &none     &none   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE        &kp BSLH   &kp GRAVE
                                        &trans          &trans            &trans                  &trans                 &trans             &trans
