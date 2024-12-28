@@ -70,9 +70,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y       &kp U   &kp I      &ht UNDERSCORE O  &ht EQUAL P  &kp BACKSPACE
-&kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H       &kp J   &kp K      &kp L             &kp SEMI     &ht DOUBLE_QUOTES SINGLE_QUOTE
-&kp LALT   &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N       &kp M   &kp COMMA  &kp DOT           &kp FSLH     &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y       &kp U   &ht UNDER I  &ht EQUAL O  &ht LEFT_BRACKET P  &kp BACKSPACE
+&kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H       &kp J   &kp K        &kp L        &kp SEMI            &ht DOUBLE_QUOTES SINGLE_QUOTE
+&kp LALT   &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N       &kp M   &kp COMMA    &kp DOT      &kp FSLH            &kp ESC
                          &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp RETURN  &tog 2  &kp LGUI
             >;
         };
@@ -85,10 +85,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&ht LC(TILDE) TILDE  &kp EXCL  &kp AT  &kp HASH        &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPS           &ht UNDERSCORE MINUS  &ht PLUS EQUAL  &kp LBKT  &kp RBKT
-&kp LG(SPACE)        &kp N1    &kp N2  &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8                &kp N9          &kp N0    &kp RETURN
-&trans               &none     &none   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE       &kp PIPE        &kp BSLH  &kp GRAVE
-                                       &trans          &trans            &trans                  &kp DELETE             &trans             &trans
+&ht LC(TILDE) TILDE  &kp EXCL  &kp AT  &kp HASH        &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPS           &ht MINUS UNDER  &ht PLUS EQUAL  &kp ASTRK  &kp DELETE
+&kp LG(SPACE)        &kp N1    &kp N2  &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9          &kp N0     &kp RETURN
+&trans               &none     &none   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE        &kp BSLH   &kp GRAVE
+                                       &trans          &trans            &trans                  &trans                 &trans             &trans
             >;
         };
 
@@ -100,19 +100,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &none      &none      &none      &none      &none        &trans          &none           &none         &none      &none  &kp DELETE
-&trans  &none      &none      &kp LC(D)  &kp LC(F)  &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &trans          &none           &none         &none      &none  &none
+&trans  &none      &none      &none      &none      &none        &kp LC(Y)       &none           &none         &none            &none  &kp BACKSPACE
+&trans  &none      &none      &kp LC(D)  &kp LC(F)  &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &none  &none
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
                               &trans     &trans     &trans       &trans          &trans          &trans
             >;
         };
 
         setting_layer {
             bindings = <
-&trans  &trans  &trans        &trans        &trans        &bt BT_CLR    &trans          &trans          &trans        &trans           &trans  &none
-&trans  &trans  &trans        &trans        &trans        &trans        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans        &trans          &trans          &trans        &trans           &trans  &studio_unlock
-                              &trans        &trans        &trans        &trans          &trans          &trans
+&trans  &trans  &trans        &trans        &trans        &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &none
+&trans  &trans  &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans        &trans  &trans  &trans  &trans  &trans  &studio_unlock
+                              &trans        &trans        &trans        &trans  &trans  &trans
             >;
         };
     };
