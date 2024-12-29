@@ -38,16 +38,6 @@
             hold-trigger-on-release;
         };
 
-        ht_def: ht_def {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <300>;
-            bindings = <&to>, <&mo>;
-
-            label = "HT_DEF";
-        };
-
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
             label = "HT";
@@ -80,7 +70,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y       &kp U          &ht UNDER I  &ht EQUAL O  &ht LEFT_BRACKET P  &kp BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y       &kp U          &ht MINUS I  &ht EQUAL O  &ht LEFT_BRACKET P  &kp BACKSPACE
 &kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H       &kp J          &kp K        &kp L        &kp SEMI            &ht DOUBLE_QUOTES SINGLE_QUOTE
 &kp LALT   &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N       &kp M          &kp COMMA    &kp DOT      &kp FSLH            &kp ESC
                          &kp LEFT_CONTROL  &mo 1  &kp SPACE    &kp RETURN  &ht_layer 2 2  &kp LGUI
@@ -95,10 +85,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&ht LC(TILDE) TILDE  &kp EXCL  &kp AT  &kp HASH        &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPS           &ht UNDER MINUS  &ht PLUS EQUAL  &kp ASTRK  &kp DELETE
-&kp LG(SPACE)        &kp N1    &kp N2  &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9          &kp N0     &kp RETURN
-&trans               &none     &none   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE        &kp BSLH   &kp GRAVE
-                                       &trans          &trans            &trans                  &trans                 &trans             &trans
+&ht LC(TILDE) TILDE       &kp EXCL  &kp AT  &kp HASH        &kp DOLLAR        &kp PERCENT             &kp CARET              &kp AMPS           &kp MINUS        &kp EQUAL  &kp ASTRK  &kp DELETE
+&ht LEFT_SHIFT LG(SPACE)  &kp N1    &kp N2  &kp N3          &kp N4            &kp N5                  &kp N6                 &kp N7             &kp N8           &kp N9     &kp N0     &kp RETURN
+&trans                    &none     &none   &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE   &kp BSLH   &kp GRAVE
+                                            &trans          &trans            &trans                  &trans                 &trans             &trans
             >;
         };
 
