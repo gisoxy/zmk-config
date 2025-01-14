@@ -72,7 +72,7 @@
         mmb_grater: mmb_grater {
             compatible = "zmk,behavior-mod-morph";
             label = "MMB_GRATER";
-            bindings = <&kp KP_DOT>, <&kp GREATER_THAN>;
+            bindings = <&kp DOT>, <&kp GREATER_THAN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
