@@ -59,6 +59,24 @@
             tapping-term-ms = <300>;
             flavor = "tap-preferred";
         };
+
+        mmb_less: mmb_less {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MMB_LESS";
+            bindings = <&kp RIGHT_BRACE>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mmb_grater: mmb_grater {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MMB_GRATER";
+            bindings = <&kp KP_DOT>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     macros {
@@ -107,9 +125,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&ht LC(TILDE) TILDE       &kp EXCL         &kp AT     &kp HASH              &kp DOLLAR             &kp PERCENT         &kp PIPE           &kp AMPS        &kp MINUS        &kp EQUAL  &kp LEFT_BRACKET  &kp BACKSPACE
-&ht LEFT_SHIFT LG(SPACE)  &kp N1           &kp N2     &kp N3                &kp N4                 &kp N5              &kp N6             &kp N7          &kp N8           &kp N9     &kp N0            &kp CARET
-&trans                    &kp PRINTSCREEN  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOT    &kp BSLH          &kp GRAVE
+&ht LC(TILDE) TILDE       &kp EXCL         &kp AT     &kp HASH              &kp DOLLAR             &kp PERCENT         &kp PIPE           &kp AMPS        &kp MINUS  &kp EQUAL    &kp LEFT_BRACKET  &kp BACKSPACE
+&ht LEFT_SHIFT LG(SPACE)  &kp N1           &kp N2     &kp N3                &kp N4                 &kp N5              &kp N6             &kp N7          &kp N8     &kp N9       &kp N0            &kp CARET
+&trans                    &kp PRINTSCREEN  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp LEFT_BRACE  &mmb_less  &mmb_grater  &kp BSLH          &kp GRAVE
                                                       &trans                &trans                 &trans              &trans             &trans          &kp DEL
             >;
         };
