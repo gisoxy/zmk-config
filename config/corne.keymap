@@ -131,17 +131,17 @@
             bindings = <
 &kp LA(LC(SPACE))         &kp LA(LC(LG(Q)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(E)))  &kp LA(LC(LG(R)))  &kp LA(LC(LG(T)))    &kp LA(LC(LG(Y)))          &kp LA(LC(LG(U)))  &kp LA(LC(LG(I)))  &kp LA(LG(LC(O)))  &kp LEFT_BRACKET   &kp DELETE
 &ht LEFT_SHIFT LG(SPACE)  &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))  &kp LA(LG(LC(G)))    &kp LEFT_ARROW             &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT          &kp LA(LC(GRAVE))  &kp LA(LS(LC(GRAVE)))
-&kp LC(SPACE)             &kp LA(LG(LC(Z)))  &kp LA(LC(LG(X)))  &kp LG(LA(LC(C)))  &kp LA(LC(LG(V)))  &kp LA(LC(LG(B)))    &msc SCRL_LEFT             &msc SCRL_DOWN     &msc SCRL_UP       &msc SCRL_RIGHT    &kp LC(GRAVE)      &to 3
+&kp LC(SPACE)             &kp LA(LG(LC(Z)))  &kp LA(LC(LG(X)))  &kp LG(LA(LC(C)))  &kp LA(LC(LG(V)))  &kp LA(LC(LG(B)))    &msc SCRL_LEFT             &msc SCRL_DOWN     &msc SCRL_UP       &msc SCRL_RIGHT    &kp LC(GRAVE)      &mo 3
                                                                 &kp RCTRL          &trans             &kp LGUI             &kp LC(LG(LA(LS(SPACE))))  &trans             &kp BSPC
             >;
         };
 
         layer_f {
             bindings = <
-&to 0     &none   &none   &none   &none   &none     &none    &none    &none        &none    &none    &none
-&kp F1    &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7   &kp F8   &kp F9       &kp F10  &kp F11  &kp F12
-&kp LALT  &none   &none   &none   &none   &none     &none    &none    &none        &none    &none    &kp LSHFT
-                          &kp F9  &mo 2   &kp F5    &kp F10  &kp F11  &kp LS(F11)
+&to 0     &none   &none   &none   &none       &none     &none    &none    &none        &none    &none    &none
+&kp F1    &kp F2  &kp F3  &kp F4  &kp F5      &kp F6    &kp F7   &kp F8   &kp F9       &kp F10  &kp F11  &kp F12
+&kp LALT  &none   &none   &none   &none       &none     &none    &none    &none        &none    &none    &kp LSHFT
+                          &kp F9  &kp LS(F5)  &kp F5    &kp F10  &kp F11  &kp LS(F11)
             >;
         };
 
