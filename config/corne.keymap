@@ -129,10 +129,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LA(LC(SPACE))         &kp LA(LC(LG(Q)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(E)))  &kp LA(LC(LG(R)))  &kp LA(LC(LG(T)))    &kp LA(LC(LG(Y)))  &kp LA(LC(LG(U)))  &kp LA(LC(LG(I)))  &kp LA(LG(LC(O)))  &kp LEFT_BRACKET   &kp DELETE
-&ht LEFT_SHIFT LG(SPACE)  &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))  &kp LA(LG(LC(G)))    &kp LEFT_ARROW     &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT          &kp LA(LC(GRAVE))  &kp LA(LS(LC(GRAVE)))
-&kp LC(SPACE)             &kp LA(LG(LC(Z)))  &kp LA(LC(LG(X)))  &kp LG(LA(LC(C)))  &kp LA(LC(LG(V)))  &kp LA(LC(LG(B)))    &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_UP       &msc SCRL_RIGHT    &kp LC(GRAVE)      &to 3
-                                                                &kp RCTRL          &trans             &kp LGUI             &kp LC(SPACE)      &trans             &kp BSPC
+&kp LA(LC(SPACE))         &kp LA(LC(LG(Q)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(E)))  &kp LA(LC(LG(R)))  &kp LA(LC(LG(T)))    &kp LA(LC(LG(Y)))          &kp LA(LC(LG(U)))  &kp LA(LC(LG(I)))  &kp LA(LG(LC(O)))  &kp LEFT_BRACKET   &kp DELETE
+&ht LEFT_SHIFT LG(SPACE)  &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))  &kp LA(LG(LC(G)))    &kp LEFT_ARROW             &kp DOWN_ARROW     &kp UP_ARROW       &kp RIGHT          &kp LA(LC(GRAVE))  &kp LA(LS(LC(GRAVE)))
+&kp LC(SPACE)             &kp LA(LG(LC(Z)))  &kp LA(LC(LG(X)))  &kp LG(LA(LC(C)))  &kp LA(LC(LG(V)))  &kp LA(LC(LG(B)))    &msc SCRL_LEFT             &msc SCRL_DOWN     &msc SCRL_UP       &msc SCRL_RIGHT    &kp LC(GRAVE)      &to 3
+                                                                &kp RCTRL          &trans             &kp LGUI             &kp LC(LG(LA(LS(SPACE))))  &trans             &kp BSPC
             >;
         };
 
