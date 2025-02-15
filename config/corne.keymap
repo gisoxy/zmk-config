@@ -108,10 +108,10 @@
 
         f_layer {
             bindings = <
-&to 0   &none      &none      &none       &none     &none     &none    &none     &none        &none      &none      &none
-&kp F1  &kp F2     &kp F3     &kp F4      &kp F5    &kp F6    &kp F7   &kp F8    &kp F9       &kp F10    &kp F11    &kp F12
-&mo 3   &kp LSHFT  &kp LCTRL  &kp LALT    &kp LGUI  &none     &none    &kp LGUI  &kp LALT     &kp LCTRL  &kp LSHFT  &mo 2
-                              &kp LS(F5)  &kp F5    &kp F9    &kp F10  &kp F11   &kp LS(F11)
+&to 0   &none      &none      &none        &none     &none      &none   &none     &none       &none      &none      &none
+&kp F1  &kp F2     &kp F3     &kp F4       &kp F5    &kp F6     &kp F7  &kp F8    &kp F9      &kp F10    &kp F11    &kp F12
+&mo 3   &kp LSHFT  &kp LCTRL  &kp LALT     &kp LGUI  &none      &none   &kp LGUI  &kp LALT    &kp LCTRL  &kp LSHFT  &mo 2
+                              &kp LS(F11)  &kp F11   &kp F10    &kp F9  &kp F5    &kp LS(F5)
             >;
         };
 
