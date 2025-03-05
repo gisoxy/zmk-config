@@ -115,12 +115,12 @@
             >;
         };
 
-        f_layer {
+        num_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp BACKSPACE
-&trans  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5     &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &kp F12
-&trans  &none   &none   &none    &none    &kp F9     &none   &none   &none   &none    &none    &trans
-                        &kp F12  &kp F11  &kp F10    &trans  &kp F5  &kp F9
+&kp COLON  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp F1     &kp F2  &kp F3  &kp F4     &kp F5    &kp F6       &kp F7     &kp F8     &kp F9     &kp F10  &kp F11   &kp F12
+&trans     &none   &none   &kp EQUAL  &kp PLUS  &kp MINUS    &kp ASTRK  &kp SLASH  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                           &kp F11    &kp F10   &kp SPACE    &trans     &kp F5     &kp F9
             >;
         };
 
@@ -132,10 +132,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp EQUAL  &kp EXCL   &kp AT            &kp HASH           &kp DOLLAR      &kp PERCENT        &kp CARET             &kp AMPS               &kp STAR       &kp SLASH         &kp BACKSLASH  &kp BACKSPACE
-&kp PLUS   &kp N1     &kp N2            &kp N3             &kp N4          &kp N5             &kp LEFT_ARROW        &kp DOWN_ARROW         &kp UP_ARROW   &kp DOWN_ARROW    &kp N0         &kp MINUS
-&kp TILDE  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE       &kp UNDER
-                                        &kp COMMA          &kp DOT         &kp SPACE          &kp ENTER             &trans                 &kp DELETE
+&kp EQUAL            &kp EXCL   &kp AT                &kp HASH               &kp DOLLAR      &kp PERCENT         &kp CARET       &kp AMPS        &kp STAR      &kp N0          &kp PIPE      &kp BACKSPACE
+&ht LEFT_SHIFT PLUS  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp SEMI      &kp MINUS
+&kp TILDE            &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN    &kp SLASH       &kp BACKSLASH   &kp COMMA     &kp DOT         &kp QUESTION  &kp UNDER
+                                                      &kp COMMA              &kp DOT         &kp SPACE           &kp ENTER       &trans          &kp DELETE
             >;
         };
 
@@ -148,7 +148,7 @@
 
             bindings = <
 &kp LA(LC(SPACE))         &kp LA(LC(LG(Q)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(E)))      &kp LA(LC(LG(R)))  &kp LA(LC(LG(T)))    &kp LA(LC(LG(Y)))      &kp LA(LC(LG(U)))          &kp LA(LC(LG(I)))      &kp LA(LG(LC(O)))    &kp LEFT_BRACKET   &kp BACKSPACE
-&ht LEFT_SHIFT LG(SPACE)  &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))      &kp LA(LC(LG(F)))  &kp LA(LG(LC(G)))    &kp LEFT_ARROW         &kp DOWN_ARROW             &kp UP_ARROW           &kp RIGHT            &kp LA(LC(GRAVE))  &kp LA(LS(LC(GRAVE)))
+&ht LEFT_SHIFT LG(SPACE)  &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))      &kp LA(LC(LG(F)))  &kp LA(LG(LC(G)))    &kp LA(LC(LG(H)))      &kp LA(LC(LG(J)))          &kp LA(LC(LG(K)))      &kp LA(LC(LG(L)))    &kp LA(LC(GRAVE))  &kp LA(LS(LC(GRAVE)))
 &kp LC(SPACE)             &kp LA(LG(LC(Z)))  &kp LA(LC(LG(X)))  &kp LG(LA(LC(C)))      &kp LA(LC(LG(V)))  &kp LA(LC(LG(B)))    &kp LA(LC(LG(N)))      &kp LA(LC(LG(M)))          &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(DOT)))  &kp LC(GRAVE)      &kp LC(LS(GRAVE))
                                                                 &kp LA(LC(LG(TILDE)))  &trans             &kp LA(LC(TILDE))    &kp LC(LA(LS(SPACE)))  &kp LS(LA(LC(LG(SPACE))))  &kp DEL
             >;
@@ -157,7 +157,7 @@
         media_layer {
             bindings = <
 &kp LC(LS(ESCAPE))  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))      &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))    &kp LA(LC(LG(N6)))     &kp LA(LC(LG(N7)))     &kp LA(LC(LG(N8)))         &kp LA(LC(LG(N9)))       &kp LA(LC(LG(N0)))        &kp LA(LC(DEL))
-&kp HOME            &kp LS(LC(LG(N4)))  &kp LC(LS(N4))      &kp LC(LS(N5))          &kp LC(LS(N3))      &kp PSCRN             &kp LA(LC(LG(H)))      &kp LA(LC(LG(J)))      &kp LA(LC(LG(K)))          &kp LA(LC(LG(L)))        &kp LA(LC(LG(SEMI)))      &kp PAGE_UP
+&kp HOME            &kp LS(LC(LG(N4)))  &kp LC(LS(N4))      &kp LC(LS(N5))          &kp LC(LS(N3))      &kp PSCRN             &kp LA(LC(LG(LS(H))))  &kp LA(LC(LG(LS(J))))  &kp LA(LC(LG(LS(K))))      &kp LA(LC(LG(LS(L))))    &kp LA(LC(LG(LS(SEMI))))  &kp PAGE_UP
 &kp END             &kp C_VOL_DN        &kp C_VOL_UP        &kp C_PP                &kp C_PREV          &kp C_NEXT            &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LC(LG(COMMA))))  &kp LS(LA(LC(LG(DOT))))  &kp LS(LA(LC(LG(FSLH))))  &kp PAGE_DOWN
                                                             &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))   &trans                &kp LEFT_SHIFT         &kp LA(LC(UP_ARROW))   &kp LA(LC(DOWN))
             >;
