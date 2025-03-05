@@ -117,14 +117,14 @@
 
         f_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp F7   &kp F8   &kp F9   &kp F10  &kp F11  &kp F12
-&trans  &none   &none   &none    &none    &none      &kp F12  &kp F10  &kp F11  &kp F5   &none    &trans
-&trans  &none   &none   &none    &none    &kp F9     &none    &none    &none    &none    &none    &trans
-                        &kp F12  &kp F11  &kp F10    &trans   &kp F5   &kp F9
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp BACKSPACE
+&trans  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5     &kp N6  &kp N7  &kp N8  &kp N9   &kp N0   &kp F12
+&trans  &none   &none   &none    &none    &kp F9     &none   &none   &none   &none    &none    &trans
+                        &kp F12  &kp F11  &kp F10    &trans  &kp F5  &kp F9
             >;
         };
 
-        num_layer {
+        sym_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -133,7 +133,7 @@
 
             bindings = <
 &kp EQUAL  &kp EXCL   &kp AT            &kp HASH           &kp DOLLAR      &kp PERCENT        &kp CARET             &kp AMPS               &kp STAR       &kp SLASH         &kp BACKSLASH  &kp BACKSPACE
-&kp PLUS   &kp N1     &kp N2            &kp N3             &kp N4          &kp N5             &kp N6                &kp N7                 &kp N8         &kp N9            &kp N0         &kp MINUS
+&kp PLUS   &kp N1     &kp N2            &kp N3             &kp N4          &kp N5             &kp LEFT_ARROW        &kp DOWN_ARROW         &kp UP_ARROW   &kp DOWN_ARROW    &kp N0         &kp MINUS
 &kp TILDE  &kp GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE       &kp UNDER
                                         &kp COMMA          &kp DOT         &kp SPACE          &kp ENTER             &trans                 &kp DELETE
             >;
