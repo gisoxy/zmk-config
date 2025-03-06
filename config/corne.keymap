@@ -132,10 +132,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp EQUAL            &kp EXCL   &kp AT                &kp HASH               &kp DOLLAR      &kp PERCENT         &kp CARET       &kp AMPS        &kp STAR      &kp N0          &kp PIPE      &kp BACKSPACE
-&ht LEFT_SHIFT PLUS  &kp COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp SEMI      &kp MINUS
-&ht LALT TILDE       &kp GRAVE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN    &kp SLASH       &kp BACKSLASH   &kp COMMA     &kp DOT         &kp QUESTION  &kp UNDER
-                                                      &kp LCTRL              &kp LEFT_GUI    &kp SPACE           &kp ENTER       &trans          &kp DELETE
+&kp EQUAL            &kp EXCL   &kp AT            &kp HASH              &kp DOLLAR             &kp PERCENT          &kp CARET       &kp AMPS        &kp STAR      &kp N0          &kp PIPE      &kp BACKSPACE
+&ht LEFT_SHIFT PLUS  &kp COLON  &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp SEMI      &kp MINUS
+&ht LALT TILDE       &kp GRAVE  &kp LEFT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp RIGHT_BRACKET    &kp SLASH       &kp BACKSLASH   &kp COMMA     &kp DOT         &kp QUESTION  &kp UNDER
+                                                  &kp LCTRL             &kp LEFT_GUI           &kp SPACE            &kp ENTER       &trans          &kp DELETE
             >;
         };
 
