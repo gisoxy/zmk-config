@@ -123,9 +123,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp EQUAL                 &kp EXCL   &kp AT            &kp HASH              &kp DOLLAR             &kp PERCENT          &kp CARET       &kp AMPS        &kp STAR      &kp PIPE        &kp LEFT_BRACKET  &kp BACKSPACE
-&ht LEFT_SHIFT LG(SPACE)  &kp PLUS   &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp SEMI          &kp MINUS
-&ht LALT TILDE            &kp GRAVE  &kp LEFT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp RIGHT_BRACKET    &kp SLASH       &kp BACKSLASH   &kp COMMA     &kp DOT         &kp QUESTION      &kp UNDER
+&kp EQUAL                 &kp EXCL   &kp AT            &kp HASH              &kp DOLLAR             &kp PERCENT          &kp CARET       &kp AMPS        &kp STAR      &kp PIPE   &kp LEFT_BRACKET  &kp BACKSPACE
+&ht LEFT_SHIFT LG(SPACE)  &kp PLUS   &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp SEMI          &kp MINUS
+&ht LALT TILDE            &kp GRAVE  &kp LEFT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp RIGHT_BRACKET    &kp SLASH       &kp BACKSLASH   &kp COMMA     &kp DOT    &kp QUESTION      &kp UNDER
                                                        &kp LCTRL             &trans                 &kp SPACE            &kp ENTER       &kp LEFT_GUI    &kp DELETE
             >;
         };
