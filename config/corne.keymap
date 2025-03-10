@@ -44,7 +44,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
         };
 
         ht_layer: ht_layer {
@@ -72,7 +72,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
     };
@@ -111,7 +111,7 @@
 &kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T                    &kp Y                  &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
 &kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G                    &kp H                  &kp J  &kp K      &kp L    &kp SEMI  &ht DOUBLE_QUOTES SINGLE_QUOTE
 &kp LALT   &kp Z  &kp X  &kp C             &kp V  &kp B                    &kp N                  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &ht_key_layer 5 ESCAPE
-                         &kp LEFT_CONTROL  &mo 1  &ht_key_layer 2 SPACE    &ht_key_layer 3 ENTER  &mo 4  &kp LGUI
+                         &kp LEFT_CONTROL  &mo 1  &ht_key_layer 4 SPACE    &ht_key_layer 3 ENTER  &mo 2  &kp LGUI
             >;
         };
 
@@ -126,25 +126,25 @@
 &kp EQUAL                 &kp EXCL   &kp AT            &kp HASH              &kp DOLLAR             &kp PERCENT          &kp CARET       &kp AMPS        &kp STAR      &kp PIPE   &kp LEFT_BRACKET  &kp BACKSPACE
 &ht LEFT_SHIFT LG(SPACE)  &kp PLUS   &kp LEFT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp SEMI          &kp MINUS
 &ht LALT TILDE            &kp GRAVE  &kp LEFT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp RIGHT_BRACKET    &kp SLASH       &kp BACKSLASH   &kp COMMA     &kp DOT    &kp QUESTION      &kp UNDER
-                                                       &kp LCTRL             &trans                 &kp SPACE            &kp ENTER       &kp LEFT_GUI    &kp DELETE
+                                                       &none                 &trans                 &kp SPACE            &kp ENTER       &kp LCTRL       &kp LEFT_GUI
             >;
         };
 
         num_layer {
             bindings = <
-&kp F1                &kp F2    &kp F3     &kp F4     &kp F5     &kp F6       &kp F7                &kp F8                 &kp F9     &kp F10  &kp F11       &kp BSPC
-&ht LEFT_SHIFT COLON  &kp N1    &kp N2     &kp N3     &kp N4     &kp N5       &kp N6                &kp N7                 &kp N8     &kp N9   &kp N0        &kp F12
-&kp PERCENT           &kp PLUS  &kp MINUS  &kp ASTRK  &kp SLASH  &kp EQUAL    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA  &kp DOT  &kp QUESTION  &kp ENTER
-                                           &kp F11    &kp F10    &trans       &kp SPACE             &kp F5                 &kp F9
+&kp EQUAL             &kp EXCL  &kp AT  &kp PLUS   &kp MINUS     &kp PERCENT    &kp HASH   &kp SLASH  &kp STAR  &kp COMMA  &kp DOT  &kp BACKSPACE
+&ht LEFT_SHIFT COLON  &kp N1    &kp N2  &kp N3     &kp N4        &kp N5         &kp N6     &kp N7     &kp N8    &kp N9     &kp N0   &kp ENTER
+&ht LEFT_ALT F1       &kp F2    &kp F3  &kp F4     &kp F5        &kp F6         &kp F7     &kp F8     &kp F9    &kp F10    &kp F11  &kp F12
+                                        &kp LCTRL  &kp LEFT_GUI  &kp SPACE      &kp ENTER  &trans     &none
             >;
         };
 
         media_layer {
             bindings = <
-&kp LC(LS(ESCAPE))  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))      &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))    &kp LA(LC(LG(N6)))     &kp LA(LC(LG(N7)))     &kp LA(LC(LG(N8)))         &kp LA(LC(LG(N9)))       &kp LA(LC(LG(N0)))        &kp LA(LC(DEL))
-&kp HOME            &kp LS(LC(LG(N4)))  &kp LC(LS(N4))      &kp LC(LS(N5))          &kp LC(LS(N3))      &kp PSCRN             &kp LA(LC(LG(LS(H))))  &kp LA(LC(LG(LS(J))))  &kp LA(LC(LG(LS(K))))      &kp LA(LC(LG(LS(L))))    &kp LA(LC(LG(LS(SEMI))))  &kp PAGE_UP
-&kp END             &kp C_VOL_DN        &kp C_VOL_UP        &kp C_PP                &kp C_PREV          &kp C_NEXT            &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(M))))  &kp LS(LA(LC(LG(COMMA))))  &kp LS(LA(LC(LG(DOT))))  &kp LS(LA(LC(LG(FSLH))))  &kp PAGE_DOWN
-                                                            &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))   &kp LEFT_SHIFT        &trans                 &kp LA(LC(UP_ARROW))   &kp LA(LC(DOWN))
+&kp LC(LS(ESCAPE))  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))      &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))    &kp LA(LC(LG(N6)))  &kp LA(LC(LG(N7)))    &kp LA(LC(LG(N8)))  &kp LA(LC(LG(N9)))  &kp LA(LC(LG(N0)))  &kp DEL
+&kp LEFT_SHIFT      &kp LS(LC(LG(N4)))  &kp LC(LS(N4))      &kp LC(LS(N5))          &kp LC(LS(N3))      &kp PSCRN             &kp HOME            &kp PAGE_UP           &kp PAGE_DOWN       &kp END             &kp LA(LC(GRAVE))   &kp LA(LS(LC(GRAVE)))
+&kp LEFT_ALT        &kp C_VOL_DN        &kp C_VOL_UP        &kp C_PP                &kp C_PREV          &kp C_NEXT            &kp LC(LBKT)        &kp LC(RBKT)          &kp LC(MINUS)       &kp LC(EQUAL)       &kp LC(GRAVE)       &kp LC(LS(GRAVE))
+                                                            &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))   &kp LCTRL             &trans              &kp LA(LC(UP_ARROW))  &kp LA(LC(DOWN))
             >;
         };
 
@@ -156,10 +156,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LA(LC(SPACE))         &kp LA(LC(LG(Q)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(E)))      &kp LA(LC(LG(R)))          &kp LA(LC(LG(T)))    &kp LA(LC(LG(Y)))      &kp LA(LC(LG(U)))  &kp LA(LC(LG(I)))      &kp LA(LG(LC(O)))    &kp LA(LC(LG(P)))  &kp BACKSPACE
-&ht LEFT_SHIFT LG(SPACE)  &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))      &kp LA(LC(LG(F)))          &kp LA(LG(LC(G)))    &kp LA(LC(LG(H)))      &kp LA(LC(LG(J)))  &kp LA(LC(LG(K)))      &kp LA(LC(LG(L)))    &kp LA(LC(GRAVE))  &kp LA(LS(LC(GRAVE)))
-&kp LC(SPACE)             &kp LA(LG(LC(Z)))  &kp LA(LC(LG(X)))  &kp LG(LA(LC(C)))      &kp LA(LC(LG(V)))          &kp LA(LC(LG(B)))    &kp LA(LC(LG(N)))      &kp LA(LC(LG(M)))  &kp LA(LC(LG(COMMA)))  &kp LA(LC(LG(DOT)))  &kp LC(GRAVE)      &kp LC(LS(GRAVE))
-                                                                &kp LA(LC(LG(TILDE)))  &kp LS(LA(LC(LG(SPACE))))  &kp LA(LC(TILDE))    &kp LC(LA(LS(SPACE)))  &trans             &kp DEL
+&kp LA(LC(SPACE))  &kp LA(LC(LG(Q)))  &kp LA(LC(LG(W)))  &kp LA(LC(LG(E)))  &kp LA(LC(LG(R)))  &kp LA(LC(LG(T)))    &kp LA(LC(LG(Y)))  &kp LA(LC(LG(U)))      &kp LA(LC(LG(I)))          &kp LA(LG(LC(O)))    &kp LA(LC(LG(P)))          &kp DELETE
+&kp LEFT_SHIFT     &kp LA(LC(LG(A)))  &kp LA(LC(LG(S)))  &kp LA(LC(LG(D)))  &kp LA(LC(LG(F)))  &kp LA(LG(LC(G)))    &kp LA(LC(LG(H)))  &kp LA(LC(LG(J)))      &kp LA(LC(LG(K)))          &kp LA(LC(LG(L)))    &kp LA(LC(LG(SEMICOLON)))  &kp ENTER
+&kp LC(SPACE)      &kp LA(LG(LC(Z)))  &kp LA(LC(LG(X)))  &kp LG(LA(LC(C)))  &kp LA(LC(LG(V)))  &kp LA(LC(LG(B)))    &kp LA(LC(LG(N)))  &kp LA(LC(LG(M)))      &kp LA(LC(LG(COMMA)))      &kp LA(LC(LG(DOT)))  &kp LC(LA(LG(SLASH)))      &kp ESCAPE
+                                                         &none              &none              &trans               &kp LS(LA(SPACE))  &kp LS(LA(LC(SPACE)))  &kp LS(LA(LC(LG(SPACE))))
             >;
         };
 
