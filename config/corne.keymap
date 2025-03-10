@@ -142,7 +142,7 @@
         media_layer {
             bindings = <
 &kp LC(LS(ESCAPE))  &kp LA(LC(LG(N1)))  &kp LA(LC(LG(N2)))  &kp LA(LC(LG(N3)))      &kp LA(LC(LG(N4)))  &kp LA(LC(LG(N5)))    &kp LA(LC(LG(N6)))  &kp LA(LC(LG(N7)))    &kp LA(LC(LG(N8)))  &kp LA(LC(LG(N9)))  &kp LA(LC(LG(N0)))  &kp DEL
-&kp LEFT_SHIFT      &kp LS(LC(LG(N4)))  &kp LC(LS(N4))      &kp LC(LS(N5))          &kp LC(LS(N3))      &kp PSCRN             &kp HOME            &kp PAGE_UP           &kp PAGE_DOWN       &kp END             &kp LA(LC(GRAVE))   &kp LA(LS(LC(GRAVE)))
+&kp LEFT_SHIFT      &kp LS(LC(LG(N4)))  &kp LC(LS(N4))      &kp LC(LS(N5))          &kp LC(LS(N3))      &kp PSCRN             &kp HOME            &kp PAGE_DOWN         &kp PAGE_UP         &kp END             &kp LA(LC(GRAVE))   &kp LA(LS(LC(GRAVE)))
 &kp LEFT_ALT        &kp C_VOL_DN        &kp C_VOL_UP        &kp C_PP                &kp C_PREV          &kp C_NEXT            &kp LC(LBKT)        &kp LC(RBKT)          &kp LC(MINUS)       &kp LC(EQUAL)       &kp LC(GRAVE)       &kp LC(LS(GRAVE))
                                                             &kp LA(LC(LEFT_ARROW))  &kp LA(LC(RIGHT))   &kp LCTRL             &trans              &kp LA(LC(UP_ARROW))  &kp LA(LC(DOWN))
             >;
