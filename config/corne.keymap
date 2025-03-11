@@ -132,10 +132,10 @@
 
         num_layer {
             bindings = <
-&kp TAB               &none  &kp F9  &kp F10    &kp F11  &kp F12      &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH  &kp BACKSPACE
-&ht LEFT_SHIFT COLON  &none  &kp F5  &kp F6     &kp F7   &kp F8       &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTRK  &kp RIGHT_SHIFT
-&kp LEFT_ALT          &none  &kp F1  &kp F2     &kp F3   &kp F4       &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp DOT    &kp ESC
-                                     &kp LCTRL  &kp N0   &kp SPACE    &none      &trans  &kp N0
+&kp TAB               &none  &kp F9  &kp F10    &kp F11  &kp F12      &kp MINUS  &kp N7  &kp N8   &kp N9  &kp SLASH  &kp BACKSPACE
+&ht LEFT_SHIFT COLON  &none  &kp F5  &kp F6     &kp F7   &kp F8       &kp PLUS   &kp N4  &kp N5   &kp N6  &kp ASTRK  &kp RIGHT_SHIFT
+&kp LEFT_ALT          &none  &kp F1  &kp F2     &kp F3   &kp F4       &kp EQUAL  &kp N1  &kp N2   &kp N3  &kp N0     &kp ESC
+                                     &kp LCTRL  &kp N0   &kp SPACE    &none      &trans  &kp DOT
             >;
         };
 
