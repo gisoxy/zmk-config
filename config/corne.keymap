@@ -111,7 +111,7 @@
 &kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T                    &kp Y                  &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
 &kp LSHFT  &kp A  &kp S  &kp D             &kp F  &kp G                    &kp H                  &kp J  &kp K      &kp L    &kp SEMI  &ht DOUBLE_QUOTES SINGLE_QUOTE
 &kp LALT   &kp Z  &kp X  &kp C             &kp V  &kp B                    &kp N                  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &ht_key_layer 5 ESCAPE
-                         &kp LEFT_CONTROL  &mo 1  &ht_key_layer 4 SPACE    &ht_key_layer 2 ENTER  &mo 3  &kp LGUI
+                         &kp LEFT_CONTROL  &mo 1  &ht_key_layer 2 SPACE    &ht_key_layer 3 ENTER  &mo 4  &kp LGUI
             >;
         };
 
@@ -133,7 +133,7 @@
         num_layer {
             bindings = <
 &kp TAB               &none  &kp F9  &kp F10    &kp F11       &kp F12      &kp N7  &kp N8  &kp N9   &kp MINUS    &kp SLASH  &kp BACKSPACE
-&ht LEFT_SHIFT COLON  &none  &kp F5  &kp F6     &kp F7        &kp F8       &kp N4  &kp N5  &kp N6   &kp PLUS     &kp ASTRK  &kp RIGHT_SHIFT
+&ht LEFT_SHIFT COLON  &none  &kp F5  &kp F6     &kp F7        &kp F8       &kp N4  &kp N5  &kp N6   &kp PLUS     &kp ASTRK  &kp ENTER
 &kp LEFT_ALT          &none  &kp F1  &kp F2     &kp F3        &kp F4       &kp N1  &kp N2  &kp N3   &kp PERCENT  &kp EQUAL  &kp ESC
                                      &kp LCTRL  &kp LEFT_GUI  &kp SPACE    &none   &kp N0  &kp DOT
             >;
